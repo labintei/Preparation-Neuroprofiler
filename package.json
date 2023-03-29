@@ -1,0 +1,25 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "neuroprofiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labintei/Preparation-Neuroprofiler.git"
+  },
+  "keywords": [
+    "neuroprofiler"
+  ],
+  "author": "BINTEIN Lauranne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labintei/Preparation-Neuroprofiler/issues"
+  },
+  "homepage": "https://github.com/labintei/Preparation-Neuroprofiler#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
