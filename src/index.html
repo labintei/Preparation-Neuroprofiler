@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 
+  <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+  <link rel="stylesheet" id="digeco-gfonts-css" href="//fonts-api.wp.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%7CRoboto%3A300%2C400%2C500%2C700%2C900&amp;ver=1.0" media="all">
+  <link rel="preload" as="style" href="https://fonts-api.wp.com/css?family=Open%20Sans:400,600%7CPoppins:600&amp;display=swap&amp;ver=1678891749">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css"
       integrity="sha512-PvB3Q4vTvWD/9aiiELYI3uebup/4mtou3Mc/uGudC/Zl+C9BdKUkAI+5jORfA+fvLK4DpzC5VyEN7P2kK43hjg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" >
-  <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  
   <link rel="stylesheet" href="index.css">  
       
-
-
 
 </head>
 <!-- flexbox flex shrink-6 padding p-6 max-w-sm  mx-auto
@@ -24,13 +30,26 @@
 <body>
     <header>
       <div class="test">
+        <!-- <div class="bg-red-700 font-extrabold">
+          <h1 class="bg-red-700">Pourquoi</h1> -->
         <!-- <a style="width: 20px; height: 20px" href="https://neuroprofiler.com/" alt="Neuroprofiler"><img class="width:50px ; height:50px" src="https://neuroprofiler.com/wp-content/uploads/2020/12/logo-1.svg"></a> -->
         <a class="button-btn pum-trigger" href="">Démo</a>
       </div>
     </header>
     <main>
+      <svg width="1688px" height="1066px" class="bg-wave">
+				<defs>
+				<linearGradient id="shape-gradient1" x1="0%" x2="50%" y1="86.603%" y2="0%">
+				<stop offset="0%" stop-color="#0994dc" stop-opacity="1"></stop>
+				<stop offset="100%" stop-color="#0994dc" stop-opacity="1"></stop>
+				</linearGradient>
+				</defs>
+				<path fill="url(#shape-gradient1)" d="M0.095,1065.875 L0.095,0.192 L1686.374,0.192 C1686.374,0.192 1715.107,145.716 1528.339,167.975 C1528.339,167.975 1476.000,178.862 1352.302,156.977 C1352.302,156.977 1269.239,141.915 1197.269,157.977 C1197.269,157.977 1132.301,169.357 1070.242,212.970 C1070.242,212.970 1021.728,240.897 973.222,327.957 C973.222,327.957 926.322,419.244 912.209,443.945 C912.209,443.945 877.214,504.753 856.197,521.936 C856.197,521.936 819.438,558.371 775.180,570.930 C775.180,570.930 742.778,581.660 703.165,586.928 C703.165,586.928 622.985,595.427 581.139,614.925 C581.139,614.925 499.142,643.746 442.109,722.913 C442.109,722.913 402.662,768.556 380.096,856.898 C380.096,856.898 355.831,921.258 330.086,947.888 C330.086,947.888 298.096,1001.353 205.059,1041.878 C205.059,1041.878 152.735,1062.000 100.037,1061.875 L0.095,1065.875 Z"></path>
+				</svg>
+
       <div class="navbar">
         <img src="https://neuroprofiler.com/wp-content/uploads/2020/12/logo-horizontal-blanc.png" class="logonavbar" alt="">
+         <div class="nav-center">
           <a href="" class="nav-link" >Home</a>
           <a href="" class="nav-link" >Modules</a>
           <a href="" class="nav-link" >Integration</a>
@@ -38,6 +57,7 @@
           <a href="" class="nav-link" >Contact</a>
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="English" 
           width="16" height="11" style="width: 16px; height: 11px; display: inline-block; margin-left: 10px;">
+        </div>
         <div class="btnDemo">Request a demo</div>
       </div>
 
@@ -46,92 +66,103 @@
       <div class="cont-img-center">
         <img src="https://neuroprofiler.com/wp-content/uploads/2020/02/illustration3.png" class="img-central" alt="">
         <div class="text-img-center">
-          <h1>Boost your clients'investments through behavioral finance</h1>
+          <h1 class="titleDemo">Boost your clients'investments through behavioral finance</h1>
           <div class="btnDemo-center">Request a demo</div>
       </div>
 
-      <h1>Very few people actually invest their money. Why so?</h1>
 
-      <div class="stat-bar">
+      <div style="height: 300px"></div>
+      <h1 id="ti">Very few people actually invest their money. Why so?</h1>
+      
+      <div class="stat-bar py-[50px]">
         <div class="stat">
-        <i class="fas fa-gamepad fa-m"></i>
+        <i class="fas fa-gamepad stat-icon"></i>
           <div class='number'>80</div>
-          <h3>% expect a smoother and more personalized experience in their financial services</h3>
+          <h3 class="stat-title">% expect a smoother and more personalized experience in their financial services</h3>
         </div>
         <div class="stat">
-          <i class="fas fa-leaf"></i>
+          <i class="fas fa-leaf stat-icon"></i>
           <div class='number'>60</div>
-          <h3>% wish to make an inpact in their investments</h3>
+          <h3 class="stat-title">% wish to make an inpact in their investments</h3>
         </div>
         <div class="stat">
-          <i class="fas fa-graduation-cap"></i>
+          <i class="fas fa-graduation-cap stat-icon"></i>
           <div class='number'>80</div>
-          <h3>% think they do not have enough financial knowledge</h3>
+          <h3 class="stat-title">% think they do not have enough financial knowledge</h3>
         </div>
       </div>
 
-      <h1>Our solutions</h1>
+      <h2>Our solutions</h2>
       <div class="solutions-bar">
         <div class="soluce">
           <i class="fas fa-brain"></i>
-          <h1>RISKprofiler</h1>
+          <a class="soluce-title">RISKprofiler</h1>
           <h3>Boost your sales thanks to an interactive risk profiling game based on <strong>behavioral finance</strong></h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
         <div class="soluce">
           <i class="fas fa-balance-scale"></i>
-          <h1>MIFIDprofiler</h1>
+          <a class="soluce-title">MIFIDprofiler</a>
           <h3>Boost your sales by transforming your MiFIDII/LSFin questionnaire into a <strong>client acquisition tool</strong></h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
         <div class="soluce">
           <i class="fas fa-leaf" style="color: #55d844"></i>
-          <h1>ESGprofiler</h1>
+          <a class="soluce-title">ESGprofiler</a>
           <h3>Boost your ESG sales by assessing your clients'<strong>ESG preferences</strong> through an investment game</h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
         <br>
         <div class="soluce">  
           <i class="fas fa-shopping-cart"></i>
-          <h1>RECOprofiler</h1>
+          <a class="soluce-title">RECOprofiler</a>
           <h3>Boost your sales by recommending to your clients suitable <strong>financial products that meet their expectations</strong></h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
         <div class="soluce">
           <i class="fas fa-university"></i>
-          <h1>EDUprofiler</h1>
+          <a class="soluce-title">EDUprofiler</a>
           <h3>Boost your sales of complex products by helping your clients <strong>understand their mechanisms through our e-learning</strong></h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
         <div class="soluce">
           <i class="fas fa-angle-double-up"></i>
-          <h1>CROSSprofiler</h1>
+          <a class="soluce-title">CROSSprofiler</a>
           <h3>Boost your sales of <strong>credit and insurance products </strong>based on collected cognitive data during your MiFIDII/LSFin questionnaire</h3>
           <a href="">Read more <i class="flaticon-next"></i></a>
         </div>
       </div>
 
-      <h1>Why Neuroprofiler ?</h1>
+      <h1 class="why">Why Neuroprofiler ?</h1>
+
+      <div class="pointille">
+      <svg class="svg-pointille" width="1175.5" height="145.5">
+        <g fill="none" stroke-width="2">
+        <path class="dashed1" stroke="white" stroke-dasharray="6, 6" stroke-linecap="butt" stroke-linejoin="miter" d="M4.874,5.310 C4.874,5.310 160.876,216.949 377.890,107.556 C377.890,107.556 612.318,-26.577 759.317,91.500 C759.317,91.500 971.500,225.630 1169.809,1.491"></path>
+        <path class="dashed2" stroke="rgba(17,17,17,0.2)" stroke-dasharray="6, 6" stroke-linecap="butt" stroke-linejoin="miter" d="M4.874,5.310 C4.874,5.310 160.876,216.949 377.890,107.556 C377.890,107.556 612.318,-26.577 759.317,91.500 C759.317,91.500 971.500,225.630 1169.809,1.491"></path>
+        </g>
+      </svg>
+      </div>
 
       <div class="why-bar">
         <div class="icon-text">
-          <i class="fas fa-brain"></i>
+          <i class="fas fa-brain circleBox"></i>
           <h1>Behavorial finance</h1>
         </div>
         <div class="icon-text">
-          <i class="fas fa-gamepad"></i>
+          <i class="fas fa-gamepad circleBox"></i>
           <h1>Gamification</h1>
         </div>          
         <div class="icon-text">
-          <i class="fas fa-balance-scale"></i>
+          <i class="fas fa-balance-scale circleBox"></i>
           <h1>MiFIDII/LSFin<br>Compliance</h1>
         </div>         
         <div class="icon-text">
-          <i class="fas fa-cogs"></i>
+          <i class="fas fa-cogs circleBox"></i>
           <h1>Flexibility of<br>integration</h1>
         </div>     
       </div>
-
+      <hr>
       <!-- La il y a une ligne en pointille-->
 
       <div class="stat-bar">
