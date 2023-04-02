@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import @flaticon; */
 
+/* @import url('/node_modules/@flaticon/flaticon-uicons/css/all/all.css'); */
+/* 
+@import url('/node_modules/font-awesome/css/font-awesome.css');
+@import url('/node_modules/font-awesome/css/font-awesome.min.css');
+@import url('/node_modules/font-awesome/css/font-awesome.css.map');
+@import url('/node_modules/font-awesome/fonts/fontawesome-webfont.svg'); */
 
 /* @tailwind base;
 @tailwind components;
@@ -91,6 +98,7 @@
 }
 
 #ti {
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -325,4 +333,95 @@ hr{
   height: 150px;
   padding-top: 35px;
 
+}
+
+.stat-bar-bis{
+  color:#0994dc;
+  background-color: white; 
+
+}
+
+.stat-bar-bis .stat-des{
+  display: inline-block;
+  width: 20%;
+}
+
+.stat-des .number{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 2.25rem;
+}
+
+.stat-bar-bis .img-stat{
+
+  font-size: 3.5rem !important;
+  color:#0994dc !important;
+}
+
+.stat-bar-bis h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375;
+  line-height: 1.4;
+  font-weight: 500;
+  color:#0994dc;
+}
+
+.logo-bar img{
+  width: 10%;
+  display: inline-block;
+}
+
+
+footer{
+
+  background-color:#0994dc;
+  color: white !important;
+  text-align: center;
+}
+
+
+footer .col-footer{
+  display: inline-block;
+  width: 20%;
+
+}
+
+footer ul{
+  list-style: disc inside none;
+}
+
+footer h1{
+  display: grid;
+  font-family: Open Sans, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  color: white;
+}
+
+
+footer li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+
+}
+
+footer a{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+footer .copyright{
+  /* background-color: #6EC1E4;; */
+  font-size: 11px !important;
+
+  background-color : #cee9f8;
+  color: #636363;
 }

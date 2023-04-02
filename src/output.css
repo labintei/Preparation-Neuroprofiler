@@ -41,8 +41,7 @@ html {
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -84,8 +83,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -354,7 +352,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -522,6 +521,7 @@ video {
 }
 
 .flex {
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -569,6 +569,16 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+/* @import @flaticon; */
+
+/* @import url('/node_modules/@flaticon/flaticon-uicons/css/all/all.css'); */
+
+/* 
+@import url('/node_modules/font-awesome/css/font-awesome.css');
+@import url('/node_modules/font-awesome/css/font-awesome.min.css');
+@import url('/node_modules/font-awesome/css/font-awesome.css.map');
+@import url('/node_modules/font-awesome/fonts/fontawesome-webfont.svg'); */
 
 /* @tailwind base;
 @tailwind components;
@@ -654,6 +664,7 @@ video {
 }
 
 #ti {
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -798,6 +809,7 @@ body{
 }
 
 .soluce-title {
+  display: -ms-grid;
   display: grid;
   text-align: center;
   color: black !important;
@@ -869,4 +881,86 @@ hr{
   width: 150px;
   height: 150px;
   padding-top: 35px;
+}
+
+.stat-bar-bis{
+  color:#0994dc;
+  background-color: white;
+}
+
+.stat-bar-bis .stat-des{
+  display: inline-block;
+  width: 20%;
+}
+
+.stat-des .number{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  font-size: 2.25rem;
+}
+
+.stat-bar-bis .img-stat{
+  font-size: 3.5rem !important;
+  color:#0994dc !important;
+}
+
+.stat-bar-bis h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375;
+  line-height: 1.4;
+  font-weight: 500;
+  color:#0994dc;
+}
+
+.logo-bar img{
+  width: 10%;
+  display: inline-block;
+}
+
+footer{
+  background-color:#0994dc;
+  color: white !important;
+  text-align: center;
+}
+
+footer .col-footer{
+  display: inline-block;
+  width: 20%;
+}
+
+footer ul{
+  list-style: disc inside none;
+}
+
+footer h1{
+  display: -ms-grid;
+  display: grid;
+  font-family: Open Sans, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  color: white;
+}
+
+footer li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+footer a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+footer .copyright{
+  /* background-color: #6EC1E4;; */
+  font-size: 11px !important;
+  background-color : #cee9f8;
+  color: #636363;
 }
