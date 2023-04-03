@@ -21,6 +21,7 @@
 } */
 
 
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -424,4 +425,15 @@ footer .copyright{
 
   background-color : #cee9f8;
   color: #636363;
+}
+
+
+
+.couleur{
+  color:#0994dc;
+}
+
+#couleur{
+
+  color:#0994dc;
 }
